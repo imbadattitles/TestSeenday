@@ -1,0 +1,95 @@
+.lk__layout {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.notice {
+  color: purple;
+  text-align: center;
+  padding: 10px 10px;
+  background: rgb(255, 199, 255);
+}
+
+.lk__right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: sticky;
+}
+
+.lk__type {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  h5 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+}
+
+.lk__data-card {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  border-left: 10px solid green;
+  border-radius: 3px;
+}
+
+.lk__left {
+  width: 65%;
+}
+
+.lk__activeTop {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 243, 243);
+}
+
+.lk__activeTop-id {
+  font-size: 18px;
+  color: rgb(230, 230, 230);
+  background: blueviolet;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.lk__activeTop-close {
+  margin-left: auto;
+  height: 40px;
+  background: red;
+  width: 40px;
+  cursor: pointer;
+}
+
+.lk__activeBtm {
+  padding: 15px;
+  p {
+    font-size: 16px;
+  }
+}
+
+.lk__activeBtm-alert {
+  background: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.lk__activeBtm-link {
+  a {
+    color: rgb(99, 18, 99);
+    margin-right: 10px;
+  }
+  span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
