@@ -8,7 +8,7 @@
         <p>- Выгружает по папкам.</p></LkType
       >
       <LkDataCard v-for="item in allItems" :key="item.id" @click="getOne(item)" :item="item" />
-      <p style="font-size: 30px" v-if="!allItems.length">Идёт загрузка</p>
+      <p v-if="!allItems.length" style="font-size: 30px">Идёт загрузка</p>
     </div>
     <div class="lk__right">
       <LkActiveItem v-if="activeItem" v-model:show="activeItem" :activeItem="activeItem" />

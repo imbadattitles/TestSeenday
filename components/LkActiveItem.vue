@@ -3,7 +3,7 @@
     <div class="lk__activeTop">
       <p class="lk__activeTop-id">{{ activeItem.id }}</p>
       <p class="lk__activeTop-title">{{ activeItem.event }}</p>
-      <span @click="hide" class="lk__activeTop-close"></span>
+      <span class="lk__activeTop-close" @click="hide" />
     </div>
     <div class="lk__activeBtm">
       <div class="lk__activeBtm-alert">
@@ -12,7 +12,7 @@
       <p class="text-bold">Ссылка для скачивания архива Выгрузки (.zip):</p>
       <div class="lk__activeBtm-link link">
         <a>{{ activeItem.download_link }}</a>
-        <span @click="copyText" class="span-link">Скопировать ссылку</span>
+        <span class="span-link" @click="copyText">Скопировать ссылку</span>
       </div>
     </div>
   </div>
@@ -33,9 +33,7 @@ const props = defineProps({
 const copyText = async () => {
   try {
     await navigator.clipboard.writeText(props.activeItem.download_link);
-  } catch (err) {
-    console.log("Copy failed!");
-  }
+  } catch (err) {}
 };
 </script>
 <style lang=""></style>
